@@ -18,7 +18,6 @@ from sqlalchemy.ext.declarative import declarative_base
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
-app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///blog.db"
 ckeditor = CKEditor(app)
 Bootstrap(app)
 login_manager = LoginManager()
